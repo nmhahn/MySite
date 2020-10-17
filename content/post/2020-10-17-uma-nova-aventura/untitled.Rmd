@@ -1,0 +1,29 @@
+---
+title: "Testando Post"
+author: "Nicolas Mathias Hahn"
+date: "2020-10-17"
+categories: 
+  - R Programming
+tags: 
+  - R
+keywords:
+  - tech
+output: html_document
+---
+
+Este é apenas um primeiro teste de postagem.
+
+# Código
+
+Testando se foi criado um bloquinho de código: `Sys.Date()`
+
+```{r}
+# Código em R
+x = rnorm(1000)
+summary(x)
+hist(x, freq = F)
+```
+
+# Notação Matemática
+
+Seja $X \sim N(0,1)$
