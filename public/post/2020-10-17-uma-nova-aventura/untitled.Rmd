@@ -2,8 +2,10 @@
 title: "Testando Post"
 author: "Nicolas Mathias Hahn"
 date: "2020-10-17"
-categories: ["R Programming"]
-tags: ["R"]
+categories: 
+  - R Programming
+tags: 
+  - R
 keywords:
   - tech
 output: html_document

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Hugo tranquilpeak theme</title>
+    <title>R on Blog do Nicão</title>
     <link>https://nmhahn.netlify.app/tags/r/</link>
-    <description>Recent content in R on Hugo tranquilpeak theme</description>
+    <description>Recent content in R on Blog do Nicão</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/tags/r/index.xml" rel="self" type="application/rss+xml" />
@@ -15,7 +15,7 @@
       <guid>https://nmhahn.netlify.app/2020/10/17/testando-post/</guid>
       <description>Este é apenas um primeiro teste de postagem.
 CódigoTestando se foi criado um bloquinho de código: Sys.Date()
-# Código em Rx = rnorm(1000)summary(x)## Min. 1st Qu. Median Mean 3rd Qu. Max. ## -3.217153 -0.672438 0.023073 -0.004936 0.665904 3.244222hist(x, freq = F)Notação MatemáticaSeja \(X \sim N(0,1)\)
+# Código em Rx = rnorm(1000)summary(x)## Min. 1st Qu. Median Mean 3rd Qu. Max. ## -3.42660 -0.61343 0.11123 0.04123 0.72944 3.31420hist(x, freq = F)Notação MatemáticaSeja \(X \sim N(0,1)\)
 </description>
     </item>
     
