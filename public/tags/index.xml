@@ -6,22 +6,13 @@
     <description>Recent content in Tags on Blog do Nicão</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>R</title>
-      <link>https://nmhahn.netlify.app/tags/r/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      <title>blogging</title>
+      <link>https://nmhahn.netlify.app/tags/blogging/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nmhahn.netlify.app/tags/r/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>testando</title>
-      <link>https://nmhahn.netlify.app/tags/testando/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://nmhahn.netlify.app/tags/testando/</guid>
+      <guid>https://nmhahn.netlify.app/tags/blogging/</guid>
       <description></description>
     </item>
     

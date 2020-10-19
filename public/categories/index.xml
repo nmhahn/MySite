@@ -6,22 +6,13 @@
     <description>Recent content in Categories on Blog do Nicão</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sat, 17 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>R Programming</title>
-      <link>https://nmhahn.netlify.app/categories/r-programming/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
+      <title>blogging</title>
+      <link>https://nmhahn.netlify.app/categories/blogging/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://nmhahn.netlify.app/categories/r-programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Teste</title>
-      <link>https://nmhahn.netlify.app/categories/teste/</link>
-      <pubDate>Sat, 17 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://nmhahn.netlify.app/categories/teste/</guid>
+      <guid>https://nmhahn.netlify.app/categories/blogging/</guid>
       <description></description>
     </item>
     

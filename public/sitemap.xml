@@ -4,52 +4,37 @@
   
   <url>
     <loc>https://nmhahn.netlify.app/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nmhahn.netlify.app/tags/blogging/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nmhahn.netlify.app/categories/blogging/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nmhahn.netlify.app/categories/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nmhahn.netlify.app/2020/10/18/nova-aventura-bem-vindo-ao-meu-blog-pessoal/</loc>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nmhahn.netlify.app/post/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/tags/r/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/categories/r-programming/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nmhahn.netlify.app/tags/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/tags/testando/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/2020/10/17/testando-post/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/categories/teste/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nmhahn.netlify.app/2020/10/17/teste2/</loc>
-    <lastmod>2020-10-17T00:00:00+00:00</lastmod>
+    <lastmod>2020-10-18T00:00:00+00:00</lastmod>
   </url>
   
 </urlset>

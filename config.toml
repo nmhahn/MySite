@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Nicolas Mathias Hahn"
-  bio = "Graduando em Estatística na UFRGS, e estou no 5º semestre do curso. Perfil Analítico. Tenho afinidade e conhecimentos de programação, visualização de dados e soluções baseadas em descrição e análise de dados. "
+  bio = ""
   job = "Estudante de Estatística"
   location = "Porto Alegre, RS - Brasil"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
@@ -190,11 +190,6 @@ canonifyurls = true
     name = "Twitter"
     icon = "fa-twitter"
     url = "https://twitter.com/intent/tweet?text=%s"
-
-  [[params.sharingOptions]]
-    name = "Google+"
-    icon = "fa-google-plus"
-    url = "https://plus.google.com/share?url=%s"
 
   [[params.sharingOptions]]
     name = "LinkedIn"
