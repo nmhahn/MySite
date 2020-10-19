@@ -11,7 +11,7 @@ keywords:
   - pessoal
 ---
 
-Oi gente! Resolvi criar uma página própria, voltada a minha pessoa e a meus feitos. Meu intuito é partilhar e "descarregar" um pouco os dados que acumulam-se em minha cabeça. Acredito que isso pode me ajudar a me conhecer um pouco melhor e a compartilhar um pouco do meu conhecimento sem ser "cansativo" com meus amigos e familiares (afinal, quem me conhece, sabe que eu falo muito - às vezes até demais hehe). 
+Oi gente! Resolvi criar uma página própria, voltada a minha pessoa e a meus feitos. Meu intuito é partilhar e "descarregar" um pouco os dados que acumulam-se em minha cabeça. Acredito que isso pode me ajudar a me conhecer um pouco melhor e a compartilhar um pouco de minhas experiências sem ser "cansativo" com meus amigos e familiares (afinal, quem me conhece, sabe que eu falo muito - às vezes até demais hehe). 
 
 Para aqueles que estiverem interessados, estou construindo esta página utilizando um pacote do *software* estatístico [R](https://cran.r-project.org/) chamado de [blogdown](https://bookdown.org/yihui/blogdown/) que utiliza um *framework* de contrução de *websites* chamado de [Hugo](https://gohugo.io/). Como ainda não tenho um domínio próprio na internet, estou utilizando o [Netlify](https://www.netlify.com/) para armazenar esta página de forma gratuita.
 
