@@ -19,7 +19,7 @@ title = "Blog do Nicão"
 theme = "hugo-tranquilpeak-theme"
 #disqusShortname = "hugo-tranquilpeak-theme"
 # googleAnalytics = "UA-123-45"
-googleAnalytics = "G-0ZMWHWZC0R"
+googleAnalytics = "UA-180942008-1"
 paginate = 7
 canonifyurls = true
 
