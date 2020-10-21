@@ -8,7 +8,7 @@ tags:
   - blogging
 keywords:
   - pessoal
-thumbnailImage: "/post/2020-10-18-nova-aventura-bem-vindo-ao-meu-blog-pessoal/img.jpg"
+thumbnailImage: "/post/img.jpg"
 coverImage: "/post/2020-10-18-nova-aventura-bem-vindo-ao-meu-blog-pessoal/img.jpg"
 coverSize: partial
 ---
