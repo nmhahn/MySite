@@ -21,5 +21,3 @@ Oi gente! Resolvi criar uma página própria. Meu intuito é partilhar meus conh
 Para aqueles que estiverem interessados, estou construindo esta página utilizando um pacote do *software* estatístico [R](https://cran.r-project.org/) chamado de [blogdown](https://bookdown.org/yihui/blogdown/) que utiliza um *framework* de construção de *websites* chamado de [Hugo](https://gohugo.io/). Como ainda não tenho um domínio próprio na internet, estou utilizando o [Netlify](https://www.netlify.com/) para armazenar esta página de forma gratuita.
 
 Enfim, bem vindo a minha humilde página!
-
-
