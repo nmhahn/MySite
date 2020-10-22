@@ -18,7 +18,7 @@ defaultContentLanguage = "pt-br"
 title = "Blog do Nicão"
 theme = "hugo-tranquilpeak-theme"
 #disqusShortname = "hugo-tranquilpeak-theme"
-#disqusShortname = ""
+disqusShortname = "nmhahn"
 # googleAnalytics = "UA-123-45"
 googleAnalytics = "UA-180942008-1"
 paginate = 4
@@ -84,7 +84,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
   identifier = "twitter"
   name = "Twitter"
   pre = "<i class=\"sidebar-button-icon fa fa-lg fa-twitter\"></i>"
-  url = "https://www.twitter.com/"
+  url = "https://twitter.com/nm_hahn"
 [[menu.links]]
   weight = 3
   identifier = "linkedin"
