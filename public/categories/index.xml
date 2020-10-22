@@ -16,5 +16,14 @@
       <description></description>
     </item>
     
+    <item>
+      <title>pessoal</title>
+      <link>https://nmhahn.netlify.app/categories/pessoal/</link>
+      <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nmhahn.netlify.app/categories/pessoal/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
