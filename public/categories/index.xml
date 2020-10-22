@@ -6,9 +6,18 @@
     <description>Recent content in Categories on Blog do Nicão</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Sun, 18 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nmhahn.netlify.app/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>blogging</title>
+      <title>Prática</title>
+      <link>https://nmhahn.netlify.app/categories/pr%C3%A1tica/</link>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nmhahn.netlify.app/categories/pr%C3%A1tica/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogging</title>
       <link>https://nmhahn.netlify.app/categories/blogging/</link>
       <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
@@ -17,11 +26,20 @@
     </item>
     
     <item>
-      <title>pessoal</title>
+      <title>Pessoal</title>
       <link>https://nmhahn.netlify.app/categories/pessoal/</link>
       <pubDate>Sun, 18 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://nmhahn.netlify.app/categories/pessoal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Estatística/Ciência de Dados</title>
+      <link>https://nmhahn.netlify.app/categories/estat%C3%ADstica/ci%C3%AAncia-de-dados/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nmhahn.netlify.app/categories/estat%C3%ADstica/ci%C3%AAncia-de-dados/</guid>
       <description></description>
     </item>
     

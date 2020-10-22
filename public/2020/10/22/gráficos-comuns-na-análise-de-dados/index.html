@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.76.5 with theme Tranquilpeak 0.4.8-BETA">
+<meta name="author" content="Nicolas Mathias Hahn">
+<meta name="keywords" content="">
+<meta name="description" content="
+
+
+djasdjpsajdsaojdpoas
+">
+
+
+<meta property="og:description" content="
+
+
+djasdjpsajdsaojdpoas
+">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gráficos Comuns na Análise de Dados">
+<meta name="twitter:title" content="Gráficos Comuns na Análise de Dados">
+<meta property="og:url" content="https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+<meta property="twitter:url" content="https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+<meta property="og:site_name" content="Blog do Nicão">
+<meta property="og:description" content="
+
+
+djasdjpsajdsaojdpoas
+">
+<meta name="twitter:description" content="
+
+
+djasdjpsajdsaojdpoas
+">
+<meta property="og:locale" content="pt-br">
+
+  
+    <meta property="article:published_time" content="2020-10-22T00:00:00">
+  
+  
+    <meta property="article:modified_time" content="2020-10-22T00:00:00">
+  
+  
+  
+    
+      <meta property="article:section" content="Estatística/Ciência de Dados">
+    
+      <meta property="article:section" content="Prática">
+    
+  
+  
+    
+      <meta property="article:tag" content="Visualização de Dados">
+    
+      <meta property="article:tag" content="Gráficos">
+    
+      <meta property="article:tag" content="Análise de Dados">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://nmhahn.netlify.app/post/2020-10-22-gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/img.jpg">
+  <meta property="twitter:image" content="https://nmhahn.netlify.app/post/2020-10-22-gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/img.jpg">
+
+
+  <meta property="og:image" content="https://nmhahn.netlify.app/post/2020-10-22-gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/img.jpg">
+  <meta property="twitter:image" content="https://nmhahn.netlify.app/post/2020-10-22-gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/img.jpg">
+
+
+
+
+  <meta property="og:image" content="https://www.gravatar.com/avatar/a2136bbf5aa71d7b0b443cc3328cf755?s=640">
+  <meta property="twitter:image" content="https://www.gravatar.com/avatar/a2136bbf5aa71d7b0b443cc3328cf755?s=640">
+
+
+    <title>Gráficos Comuns na Análise de Dados</title>
+
+    <link rel="icon" href="https://nmhahn.netlify.app/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/jquery.fancybox.min.css" integrity="sha256-vuXZ9LGmmwtjqFX1F+EKin1ThZMub58gKULUyf0qECk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" integrity="sha256-SEa4XYAHihTcEP1f5gARTB2K26Uk8PsndQYHQC1f4jU=" crossorigin="anonymous" />
+    
+    
+    <link rel="stylesheet" href="https://nmhahn.netlify.app/css/style-twzjdbqhmnnacqs0pwwdzcdbt8yhv8giawvjqjmyfoqnvazl0dalmnhdkvp7.min.css" />
+    
+    
+
+    
+      
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-180942008-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="4">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://nmhahn.netlify.app/">Blog do Nicão</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://nmhahn.netlify.app/#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.gravatar.com/avatar/a2136bbf5aa71d7b0b443cc3328cf755?s=90" alt="Foto do autor" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="4">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://nmhahn.netlify.app/#about">
+          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/a2136bbf5aa71d7b0b443cc3328cf755?s=110" alt="Foto do autor" />
+        </a>
+        <h4 class="sidebar-profile-name">Nicolas Mathias Hahn</h4>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nmhahn.netlify.app/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Início</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nmhahn.netlify.app/categories">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
+      
+      <span class="sidebar-button-desc">Categorias</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nmhahn.netlify.app/tags">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://nmhahn.netlify.app/#about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">Sobre</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.instagram.com/nm_hahn/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-instagram"></i>
+      
+      <span class="sidebar-button-desc">Instagram</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://twitter.com/nm_hahn" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      
+      <span class="sidebar-button-desc">Twitter</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://www.linkedin.com/in/nmhahn/" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      
+      <span class="sidebar-button-desc">LinkedIn</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/nmhahn" target="_blank" rel="noopener">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-left
+              post-header-cover--partial"
+       style="background-image:url('/post/2020-10-22-gr%c3%a1ficos-comuns-na-an%c3%a1lise-de-dados/img.jpg')"
+       data-behavior="4">
+    
+  </div>
+
+
+      <div id="main" data-behavior="4"
+        class="hasCover
+               hasCoverMetaOut
+               ">
+        <article class="post" itemscope itemType="http://schema.org/BlogPosting">
+          
+          
+            <div class="post-header main-content-wrap text-left">
+  
+    <h1 class="post-title" itemprop="headline">
+      Gráficos Comuns na Análise de Dados
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time itemprop="datePublished" datetime="2020-10-22T00:00:00Z">
+        
+  Outubro 22, 2020
+
+      </time>
+    
+    
+  
+  
+    <span>em</span>
+    
+      <a class="category-link" href="https://nmhahn.netlify.app/categories/estat%c3%adstica/ci%c3%aancia-de-dados">Estatística/Ciência de Dados</a>, 
+    
+      <a class="category-link" href="https://nmhahn.netlify.app/categories/pr%c3%a1tica">Prática</a>
+    
+  
+
+  </div>
+
+</div>
+          
+          <div class="post-content markdown" itemprop="articleBody">
+            <div class="main-content-wrap">
+              <p>Visualização de dados veio para ficar. Não é à toa que softwares como PowerBI e Tableau ganham cada vez mais espaço nas empresas e caem no gosto dos profissionais. Ver os dados se tornou cool. Além disso, o data viz (como a galera costuma chamar) pode auxiliar na criação de insights e contribuir com a tomada de decisão.</p>
+<p>Uma parte importante da visualização é a composição de gráficos. Sabemos que há uma gama ampla de tipos de gráficos, mas eu gostaria de citar apenas cinco gráficos básicos que deveriam ser usados em todas as análises de dados.</p>
+<p>A ideia aqui não é entrar a fundo em cada tipo de gráfico. Neste momento vou me conter apenas em dizer quais são e o que fazem. Em um segundo momento, pretendo explanar melhor cada um e mostrar na prática como funcionam.</p>
+<p>Então vamos lá!</p>
+<div id="gráfico-de-dispersão-scatterplot" class="section level1">
+<h1>Gráfico de Dispersão (<em>scatterplot</em>)</h1>
+<p><img src="https://nmhahn.netlify.app/post/2020-10-22-gráficos-comuns-na-análise-de-dados/2020-10-22-gráficos-comuns-na-análise-de-dados_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p>Scatterplot ou gráficos de dispersão: são úteis para verificar o relacionamento entre as variáveis (dependência e independência)</p>
+</div>
+<div id="histograma" class="section level1">
+<h1>Histograma</h1>
+<p><img src="https://nmhahn.netlify.app/post/2020-10-22-gráficos-comuns-na-análise-de-dados/2020-10-22-gráficos-comuns-na-análise-de-dados_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+<p>Histograma: são gráficos que permitem você analisar a distribuição de frequência dos seus dados.</p>
+</div>
+<div id="boxplot" class="section level1">
+<h1>Boxplot</h1>
+<p><img src="https://nmhahn.netlify.app/post/2020-10-22-gráficos-comuns-na-análise-de-dados/2020-10-22-gráficos-comuns-na-análise-de-dados_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Boxplot: é um gráfico utilizado para avaliar a distribuição dos dados. É possível realizar comparações visuais entre dois ou mais grupos.</p>
+</div>
+<div id="gráfico-de-setores-ou-de-pizza" class="section level1">
+<h1>Gráfico de Setores (ou de Pizza)</h1>
+<p><img src="https://nmhahn.netlify.app/post/2020-10-22-gráficos-comuns-na-análise-de-dados/2020-10-22-gráficos-comuns-na-análise-de-dados_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Gráfico de setores ou gráfico de pizza: são gráficos onde os valores de cada categoria estatística representada são proporcionais às respectivas frequências.</p>
+</div>
+<div id="gráfico-de-barras-horizontal-ou-colunas-vertical" class="section level1">
+<h1>Gráfico de Barras (horizontal) ou Colunas (vertical)</h1>
+<p><img src="https://nmhahn.netlify.app/post/2020-10-22-gráficos-comuns-na-análise-de-dados/2020-10-22-gráficos-comuns-na-análise-de-dados_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>Barplot: são gráficos de barras verticais e horizontais.</p>
+</div>
+
+              
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">ETIQUETADO em</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://nmhahn.netlify.app/tags/visualiza%C3%A7%C3%A3o-de-dados/">Visualização de Dados</a>
+
+  <a class="tag tag--primary tag--small" href="https://nmhahn.netlify.app/tags/gr%C3%A1ficos/">Gráficos</a>
+
+  <a class="tag tag--primary tag--small" href="https://nmhahn.netlify.app/tags/an%C3%A1lise-de-dados/">Análise de Dados</a>
+
+                  </div>
+                
+              
+            
+            <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PRÓXIMO</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://nmhahn.netlify.app/2020/10/18/nova-aventura-bem-vindo-ao-meu-blog/" data-tooltip="Nova Aventura! Bem vindo ao meu blog!">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">ANTERIOR</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+            
+              
+                <div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+              
+            
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2020 Nicolas Mathias Hahn. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+        <div class="post-actions-wrap">
+  
+      <nav >
+        <ul class="post-actions post-action-nav">
+          
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--disabled">
+              
+                  <i class="fa fa-angle-left"></i>
+                  <span class="hide-xs hide-sm text-small icon-ml">PRÓXIMO</span>
+                </a>
+            </li>
+            <li class="post-action">
+              
+                <a class="post-action-btn btn btn--default tooltip--top" href="https://nmhahn.netlify.app/2020/10/18/nova-aventura-bem-vindo-ao-meu-blog/" data-tooltip="Nova Aventura! Bem vindo ao meu blog!">
+              
+                  <span class="hide-xs hide-sm text-small icon-mr">ANTERIOR</span>
+                  <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+          
+        </ul>
+      </nav>
+    <ul class="post-actions post-action-share" >
+      
+        <li class="post-action hide-lg hide-md hide-sm">
+          <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions">
+            <i class="fa fa-share-alt"></i>
+          </a>
+        </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-facebook-official"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+        
+          <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </li>
+        
+      
+      
+        <li class="post-action">
+          <a class="post-action-btn btn btn--default" href="#disqus_thread">
+            <i class="fa fa-comment-o"></i>
+          </a>
+        </li>
+      
+      <li class="post-action">
+        
+          <a class="post-action-btn btn btn--default" href="#">
+        
+          <i class="fa fa-list"></i>
+        </a>
+      </li>
+    </ul>
+  
+</div>
+
+      </div>
+      <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+  <i id="btn-close-shareoptions" class="fa fa-close"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnmhahn.netlify.app%2F2020%2F10%2F22%2Fgr%25C3%25A1ficos-comuns-na-an%25C3%25A1lise-de-dados%2F">
+          <i class="fa fa-facebook-official"></i><span>Compartilhar no Facebook</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Fnmhahn.netlify.app%2F2020%2F10%2F22%2Fgr%25C3%25A1ficos-comuns-na-an%25C3%25A1lise-de-dados%2F">
+          <i class="fa fa-twitter"></i><span>Compartilhar no Twitter</span>
+        </a>
+      </li>
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fnmhahn.netlify.app%2F2020%2F10%2F22%2Fgr%25C3%25A1ficos-comuns-na-an%25C3%25A1lise-de-dados%2F">
+          <i class="fa fa-linkedin"></i><span>Compartilhar no LinkedIn</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-remove"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.gravatar.com/avatar/a2136bbf5aa71d7b0b443cc3328cf755?s=110" alt="Foto do autor" />
+    
+    <h4 id="about-card-name">Nicolas Mathias Hahn</h4>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Estudante de Estatística
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker"></i>
+        <br/>
+        Porto Alegre, RS - Brasil
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://nmhahn.netlify.app/images/cover-statistics.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.7/js/jquery.fancybox.min.js" integrity="sha256-GEAnjcTqVP+vBp3SSc8bEDQqvWAZMiHyUSIorrWwH50=" crossorigin="anonymous"></script>
+
+
+<script src="https://nmhahn.netlify.app/js/script-pcw6v3xilnxydl1vddzazdverrnn9ctynvnxgwho987mfyqkuylcb1nlt.min.js"></script>
+
+
+<script lang="javascript">
+window.onload = updateMinWidth;
+window.onresize = updateMinWidth;
+document.getElementById("sidebar").addEventListener("transitionend", updateMinWidth);
+function updateMinWidth() {
+  var sidebar = document.getElementById("sidebar");
+  var main = document.getElementById("main");
+  main.style.minWidth = "";
+  var w1 = getComputedStyle(main).getPropertyValue("min-width");
+  var w2 = getComputedStyle(sidebar).getPropertyValue("width");
+  var w3 = getComputedStyle(sidebar).getPropertyValue("left");
+  main.style.minWidth = `calc(${w1} - ${w2} - ${w3})`;
+}
+</script>
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+  
+    
+      <script>
+        var disqus_config = function () {
+          this.page.url = 'https:\/\/nmhahn.netlify.app\/2020\/10\/22\/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados\/';
+          
+            this.page.identifier = '\/2020\/10\/22\/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados\/'
+          
+        };
+        (function() {
+          
+          
+          if (window.location.hostname == "localhost") {
+            return;
+          }
+          var d = document, s = d.createElement('script');
+          var disqus_shortname = 'nmhahn';
+          s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+    
+  
+
+
+
+
+    
+  </body>
+</html>
+
