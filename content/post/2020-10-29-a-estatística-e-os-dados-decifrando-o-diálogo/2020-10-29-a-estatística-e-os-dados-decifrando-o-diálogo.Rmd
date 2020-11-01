@@ -3,12 +3,11 @@ title: "A Estatística e os Dados: decifrando o diálogo"
 date: "2020-10-29"
 categories:
   - Estatística/Ciência de Dados
-  - Teoria
 tags:
   - Estatística
   - Análise de Dados
-thumbnailImage: "/post/2020-10-28-a-estatística-e-os-dados-decifrando-o-diálogo/img.jpg"
-coverImage: "/post/2020-10-28-a-estatística-e-os-dados-decifrando-o-diálogo/img.jpg"
+thumbnailImage: "/post/2020-10-29-a-estatística-e-os-dados-decifrando-o-diálogo/img.jpg"
+coverImage: "/post/2020-10-29-a-estatística-e-os-dados-decifrando-o-diálogo/img.jpg"
 coverSize: partial
 coverMeta: out
 ---
