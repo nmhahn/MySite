@@ -1,0 +1,127 @@
+---
+title: "Entendendo o Gráfico de Barras"
+date: "2020-11-15"
+categories: 
+  - Estatística/Ciência de Dados
+tags: 
+  - Visualização de Dados
+  - Gráficos
+  - Análise de Dados
+thumbnailImage: "/post/2020-11-15-entendendo-o-gráfico-de-barras/barras.jpeg"
+coverImage: "/post/2020-11-15-entendendo-o-gráfico-de-barras/barras.jpeg"
+coverSize: partial
+coverMeta: out
+---
+
+Há um pouco menos de um mês atrás escrevi um post falando sobre alguns gráficos comuns na análise de dados. Nele, comentei que pretendia realizar um post específico para cada um. Sendo assim, vamos começar com o famoso gráfico de barras (ou colunas) também conhecido como *barplot*.
+
+<!--more-->
+
+Há um pouco menos de um mês atrás escrevi um post falando sobre alguns gráficos comuns na análise de dados. Nele, comentei que pretendia realizar um post específico para cada um. Sendo assim, vamos começar com o famoso gráfico de barras (ou colunas) também conhecido como *barplot*. Caso você não tenha visto o post sobre eles, clique [aqui](https://nmhahn.netlify.app/2020/10/22/gr%C3%A1ficos-comuns-na-an%C3%A1lise-de-dados/).
+
+Antes de construir qualquer gráfico, é importante definir qual seu objetivo; mais de um tipo gráfico pode ser utilizado para um mesmo tipo de dado. Alguns são mais "óbvios" do que outros, mas não basta "ter dados" e "ter gráficos" para, de fato, "ter informação", pois se não for útil para você (ou se você não entender), de nada adianta. Enfim, vamos lá.
+
+# O Gráfico de Barras
+
+Com certeza é um dos gráficos mais simples e um dos primeiros que temos contato. O foco dele é demonstrar quantidades específicas (contagem de itens, quantidade de dinheiro, espaço de memória, etc.) de uma forma visual por meio de barras (horizontais ou verticais), sendo que quanto maior a barra (mais alta, por exemplo), maior a quantidade. Vamos para alguns exemplos:
+
+> **Exemplo 1:** Considere uma fruteira. O objetivo do dono é saber quantas unidades de cada fruta ele tem em estoque. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(ggplot2)
+
+dados = data.frame(fruta=c(rep("Laranja",10),rep("Banana",15),rep("Ameixa",20),
+                           rep("Maçã",25), rep("Melancia",50)))
+
+ggplot(data = dados, aes(x=fruta)) +
+  geom_bar(fill="darkgreen", col="black") + 
+  ggtitle("Frutas em Estoque") +
+  ylab("Quantidade") + xlab("Fruta")
+```
+
+Esse é um exemplo super simples e direto. Como pode-se observar acima, a fruta que mais há em estoque é a melancia, e a que menos tem em estoque é a laranja. Como eu sei disso? Simples! Basta localizar no gráfico qual a coluna mais alta e a mais baixa.
+
+> **Exemplo 2:** Uma empresa varejista contém 10 vendedores, e pretende saber quanto de receita cada vendedor está gerando com suas vendas. Ela sabe que não basta observar o número total de vendas de cada um, pois nem todos os produtos têm o mesmo preço.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(gridExtra)
+
+dados = data.frame(vendedor=c("A","B","C","D","E","F","G","H","I","J"),
+                   receita=c(2750,5340,2000,11493,6000,4800,9300,5200,1400,7650))
+
+
+g1 = ggplot(data = dados, aes(vendedor,receita)) +
+  geom_col(fill="grey", col="black") + 
+  ylab("Receita") + xlab("Vendedor") +
+  ggtitle("Receita Gerada por Cada Vendedor") +
+  coord_flip() + ylim(c(0,12500))
+
+
+g2 = ggplot(data = dados, aes(reorder(vendedor,receita,sum),receita)) +
+  geom_col(fill="grey", col="black") + 
+  ylab("Receita") + xlab("Vendedor") +
+  ggtitle("Receita Gerada por Cada Vendedor") +
+  coord_flip() + ylim(c(0,12500))
+
+grid.arrange(g1,g2, ncol=2)
+
+```
+
+Ambos os gráficos acima respondem a pergunta. Afinal, o objetivo era saber quanto cada vendedor gerava de receita. certo? Bem...sim, mas creio que podemos concordar que o gráfico à direita é mais "agradável aos olhos" do que o da esquerda. Claro que depende muito de cada situação (e de cada pessoa), já que podem existir situações em que seja preferível, por exemplo, ordenar os itens em ordem alfabética em vez de ordem decrescente (ou crescente) das quantidades.
+
+# Cuidados
+
+Seja sempre criterioso ao observar um gráfico. Infelizmente, na criação de um gráfico, a informação visual poderá ser tendeciosa e levar a conclusões equivocadas - fora que algumas pessoas podem acabar utilizando de artifícios para enganar os outros com isso. Vou ilustrar com um exemplo:
+
+> **Exemplo 3:** Considere o interesse do público a determinado programa televisivo. A empresa responsável registrou a taxa de interesse de seu público ao longo de seis meses. Após isso, será necessário apresentar os resultados aos investidores dessa empresa de uma forma simples e rápida.
+
+Vamos lá. Primeiro, vamos considerar que eu, Nicolas, seja o responsável em analisar esses dados e demonstrar os resultados aos investidores. Dou uma olhada nos dados:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(knitr)
+library(kableExtra)
+
+dados = data.frame(mes=c("01","02","03","04","05","06"),
+                   interesse=c(40.123,40.125,40.128,40.13,40.132,40.135))
+
+kable(dados)
+```
+
+Após isso, crio o gráfico que será utilizado na apresentação:
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(gridExtra)
+
+g1 = ggplot(data = dados, aes(mes,interesse)) +
+  geom_col(fill="lightblue", col="black") + 
+  ylab("Percentual") + xlab("Mês") +
+  ggtitle("Taxa de Interesse") +
+  ylim(c(0,50))
+
+g2 = ggplot(data = dados, aes(mes,interesse)) +
+  geom_col(fill="lightblue", col="black") + 
+  ylab("Percentual") + xlab("Mês") +
+  ggtitle("Taxa de Interesse") +
+  coord_cartesian(ylim=c(40.12,40.14))
+
+g1
+```
+
+Ao analisar o gráfico, pode-se observar que em todos os meses houve uma taxa constante de interesse de cerca de 40% do público. É possível concluir isso considerando que todas as colunas são praticamente do mesmo tamanho, além do fato de ao observarmos o eixo Percentual (vertical, à esquerda do gráfico), o valor indicado no topo das colunas é o 40. Vou me referir a este detalhe do eixo como "escala".
+
+Considere agora que ao construir o gráfico, o software o construa da seguinte forma:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+g2
+```
+
+De cara, você pode ter a falsa impressão de que o interesse subiu "bastante" ao longo dos meses. No entanto, lembre que eu comentei anteriormente sobre a escala. Neste caso, a escala do eixo Percentual começou em 40.120 em vez de 0 e vai até 40.140 em vez de 50, o que aumentou a diferença visual entre as colunas de cada mês. Observemos agora os gráficos lado a lado:
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+grid.arrange(g1,g2, ncol=2)
+```
+
+**Ambos os gráficos são referentes aos mesmos dados e demonstram a mesma informação**: a taxa de interesse, em percentual, ao longo de seis meses. Apesar disso, observe que a escala em ambos é bem diferente, podendo afetar o visual e tendenciar a conclusões imprecisas - por exemplo, que a taxa de interesse aumentou "muito" ao longo dos meses. Portanto, **sempre que observar um gráfico, atente-se à escala**.
+
+Bom pessoal, é isso que eu queria discutir sobre o gráfico de barras. Quaisquer dúvidas, sugestões e críticas que tiverem, por favor deixem nos comentários; vou adorar um feedback :)
