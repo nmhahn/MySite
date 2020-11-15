@@ -13,7 +13,7 @@ coverSize: partial
 coverMeta: out
 ---
 
-Há um pouco menos de um mês atrás escrevi um post falando sobre alguns gráficos comuns na análise de dados. Nele, comentei que pretendia realizar um post específico para cada um. Sendo assim, vamos começar com o famoso gráfico de barras (ou colunas) também conhecido como *barplot*.
+Há pouco menos de um mês atrás escrevi um post falando sobre alguns gráficos comuns na análise de dados. Nele, comentei que pretendia realizar um post específico para cada um. Sendo assim, vamos começar com o famoso gráfico de barras (ou colunas) também conhecido como *barplot*.
 
 <!--more-->
 
